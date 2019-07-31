@@ -19,3 +19,4 @@ products_list.each do |product| #busca los productos
     product.tallas.pop #me lee los ultimos archivos
     File.write('nuevo_catalogo.txt', "#{product.name}, #{product.tallas.join(', ')}\n", mode: 'a') #el mode: 'a' hace que no se me transcriba el archivo es decir anexar o escribir despues del utlimo
 end
+print " esto es el primero "
